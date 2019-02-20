@@ -5,27 +5,18 @@
   "main": "./lib/index.js",
   "scripts": {
     "build": "babel ./src -d ./lib --presets=es2015,react,stage-2",
-    "prepublish": "npm run build",
     "lint": "eslint src/**",
-    "prepare":"babel ./src -d ./lib --presets=es2015,react,stage-2"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/NewOldMax/react-material-ui-form-validator.git"
+    "prepare": "npm run build"
   },
   "keywords": [
     "material-ui",
     "form",
     "validation"
   ],
-  "author": "NewOldMax",
+  "author": "vivek",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/NewOldMax/react-material-ui-form-validator/issues"
-  },
-  "homepage": "https://github.com/NewOldMax/react-material-ui-form-validator#readme",
   "dependencies": {
-    "react-form-validator-core": "0.6.1"
+    "react-form-validator-core": "https://github.com/avivek/react-form-validator-core"
   },
   "peerDependencies": {
     "@material-ui/core": "^1.0.0 || ^3.0.0",
