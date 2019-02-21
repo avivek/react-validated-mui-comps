@@ -1,27 +1,5 @@
 ## Validation component for material-ui forms
 
-[![license](https://img.shields.io/github/license/mashape/apistatus.svg)](https://opensource.org/licenses/MIT)
-[![npm version](https://badge.fury.io/js/react-material-ui-form-validator.svg)](https://badge.fury.io/js/react-material-ui-form-validator)
-[![Build Status](https://travis-ci.org/NewOldMax/react-material-ui-form-validator.svg?branch=master)](https://travis-ci.org/NewOldMax/react-material-ui-form-validator)
-
-### [Demo](https://newoldmax.github.io/react-material-ui-form-validator/)
-
-### Installation
-
-````
-npm install react-material-ui-form-validator
-````
-
-### Versions
-+ 0.x, 1.x - supports material-ui <= 0.x
-+ ^2.0.0 - supports material-ui >= 1.x || 3.x
-
-Implementation of [react-form-validator-core](https://www.npmjs.com/package/react-form-validator-core) for [material-ui](https://material-ui.com/)
-
-Supported types:
-+ Text ([TextValidator](https://github.com/NewOldMax/react-material-ui-form-validator/blob/master/src/TextValidator.jsx))
-+ Select ([SelectValidator](https://github.com/NewOldMax/react-material-ui-form-validator/blob/master/src/SelectValidator.jsx))
-
 Some rules can accept extra parameter, example:
 ````javascript
 <TextValidator
@@ -30,10 +8,6 @@ Some rules can accept extra parameter, example:
 />
 ````
 
-
-### Example
-
-<img src="https://raw.githubusercontent.com/NewOldMax/react-material-ui-form-validator/master/examples/example.gif" width="285">
 
 ### Usage
 
@@ -217,8 +191,3 @@ export default CheckboxValidatorElement;
     />
 ````
 
-##### [Advanced usage](https://github.com/NewOldMax/react-material-ui-form-validator/wiki)
-
-### Contributing
-
-This component covers all my needs, but feel free to contribute.
