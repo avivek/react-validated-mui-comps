@@ -1,6 +1,6 @@
 {
-  "name": "react-material-ui-form-validator",
-  "version": "3.0.0",
+  "name": "react-material-ui-form-validator-vivek",
+  "version": "0.1.1",
   "description": "Simple validator for forms designed with material-ui v1/v3 components.",
   "main": "./lib/index.js",
   "scripts": {
@@ -16,7 +16,7 @@
   "author": "vivek anand",
   "license": "MIT",
   "dependencies": {
-    "react-form-validator-core": "https://github.com/avivek/react-form-validator-core"
+    "react-form-validator-core-vivek": "^0.1.1"
   },
   "peerDependencies": {
     "@material-ui/core": "^1.0.0 || ^3.0.0",
