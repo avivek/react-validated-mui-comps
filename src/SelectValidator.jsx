@@ -1,8 +1,8 @@
 /* eslint-disable */
 import React from 'react';
-import TextField from '@material-ui/core/TextField';
 /* eslint-enable */
-import { ValidatorComponent } from 'react-form-validator-core';
+import Select from 'mui-select-with-search-vivek';
+import { ValidatorComponent } from 'react-form-validator-core-vivek';
 
 export default class SelectValidator extends ValidatorComponent {
 
@@ -20,14 +20,17 @@ export default class SelectValidator extends ValidatorComponent {
         } = this.props;
         const { isValid,changed,blurred } = this.state;
         return (
-            <TextField
+            <FormControl
+            error={!isValid && changed && blurred}
+        >
+            <Select
                 {...rest}
-                select
-                error={!isValid && changed && blurred}
+                
                 onChange = {this.componentOnChange}
                 onBlur = {this.componentOnBlur}
-                helperText={(!isValid && changed && blurred && this.getErrorMessage()) || helperText}
             />
+            <FormHelperText>{(!isValid && changed && blurred && this.getErrorMessage()) || helperText}</FormHelperText>
+            </FormControl>
         );
     }
 }

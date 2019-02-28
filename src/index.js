@@ -1,4 +1,4 @@
-import { ValidatorComponent, ValidatorForm } from 'react-form-validator-core';
+import { ValidatorComponent, ValidatorForm } from 'react-form-validator-core-vivek';
 
 import SelectValidator from './SelectValidator';
 import TextValidator from './TextValidator';

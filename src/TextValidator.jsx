@@ -2,7 +2,7 @@
 import React from 'react';
 import TextField from '@material-ui/core/TextField';
 /* eslint-enable */
-import { ValidatorComponent } from 'react-form-validator-core';
+import { ValidatorComponent } from 'react-form-validator-core-vivek';
 
 export default class TextValidator extends ValidatorComponent {
 
@@ -21,9 +21,6 @@ export default class TextValidator extends ValidatorComponent {
             ...rest
         } = this.props;
         const { isValid,changed,blurred } = this.state;
-        console.log ('isValid is' + isValid);
-        console.log('changed is' + changed);
-        console.log('blurred is' + blurred);
         return (
             <TextField
                 {...rest}
