@@ -1,11 +1,10 @@
 /* eslint-disable */
 import React from 'react';
+import {RadioGroup,FormHelperText,FormControl} from '@material-ui/core';
 /* eslint-enable */
-import Select from 'mui-select-with-search-vivek';
 import { ValidatorComponent } from 'react-form-validator-core-vivek';
-import {FormControl,FormHelperText} from '@material-ui/core'
 
-export default class SelectValidator extends ValidatorComponent {
+export default class RadioGroupValidator extends ValidatorComponent {
 
     render() {
         /* eslint-disable no-unused-vars */
@@ -17,19 +16,22 @@ export default class SelectValidator extends ValidatorComponent {
             helperText,
             validatorListener,
             withRequiredValidator,
+            onChange,
+            onBlur,
+            children,
             ...rest
         } = this.props;
         const { isValid,changed,blurred } = this.state;
         return (
             <FormControl
-            error={!isValid && changed && blurred}
-            fullWidth
-        >
-            <Select
-            {...rest}    
+            error={!isValid && changed && blurred}>
+            <RadioGroup
+                {...rest}
                 onChange = {this.componentOnChange}
                 onBlur = {this.componentOnBlur}
-            />
+            >
+            {this.props.children}
+            </RadioGroup>
             <FormHelperText>{(!isValid && changed && blurred && this.getErrorMessage()) || helperText}</FormHelperText>
             </FormControl>
         );
