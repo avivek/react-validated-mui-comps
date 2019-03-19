@@ -40,9 +40,6 @@ export default class ValidatedTelInput extends ValidatorComponent {
         }
     }
 
-    phoneValid = (isValid) => {
-
-    }
 
     render() {
         /* eslint-disable no-unused-vars */
