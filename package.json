@@ -1,6 +1,6 @@
 {
   "name": "react-material-ui-form-validator-vivek",
-  "version": "0.2.13",
+  "version": "0.2.14",
   "description": "Simple validator for forms designed with material-ui v1/v3 components.",
   "main": "./lib/index.js",
   "scripts": {

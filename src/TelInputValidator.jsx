@@ -52,6 +52,7 @@ export default class ValidatedTelInput extends ValidatorComponent {
             validatorListener,
             withRequiredValidator,
             onPhoneNumberChange,onPhoneNumberBlur,
+            invalidPhoneNumberMessage,
             ...rest
         } = this.props;
 
@@ -67,9 +68,9 @@ export default class ValidatedTelInput extends ValidatorComponent {
       onPhoneNumberBlur={this.onPhoneBlur}
       {...rest}
     />
-    <TextValidator  value={this.state.isPhoneValid?1:-1} style = {{display:"none"}} validators = {["isPositive"]} errorMessages= {['invalid PhoneNumber']}/>
+    <TextValidator  value={this.state.isPhoneValid?1:-1} style = {{display:"none"}} validators = {["isPositive"]} errorMessages= {[invalidPhoneNumberMessage]}/>
 
-            <FormHelperText> {(!isValid && changed && blurred && this.getErrorMessage())||(!this.state.isPhoneValid && changed && blurred && "Invalid ph")  || helperText} </FormHelperText>
+            <FormHelperText> {(!isValid && changed && blurred && this.getErrorMessage())||(!this.state.isPhoneValid && changed && blurred && invalidPhoneNumberMessage)  || helperText} </FormHelperText>
             </FormControl>
         );
     }
